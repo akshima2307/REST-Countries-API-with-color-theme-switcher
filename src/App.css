@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+
+*,
+*::after,
+*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav{
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navHeading{
+  font-size: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBtn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  outline:none;
+  border: none;
+  cursor: pointer;
+}
+
+/* search bar */
+
+.searchSection{
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 3rem;
+}
+.searchBar{
+  display: flex;
+  padding: 0.6rem;
+  align-items: center;
+  width: 25rem;
+  height: 3rem;
+  box-sizing: border-box;
+}
+.searchInput{
+  margin-left: 1rem;
+  border: none;
+  outline: none;
+}
+/* DropDown menu */
+
+.menuBtn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 12rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 0.4rem;
+}
+.menu{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu > button{
+  color:  hsl(200, 15%, 8%);
+  height: 2.2rem;
+  border: none;
+  cursor: pointer;
 }
